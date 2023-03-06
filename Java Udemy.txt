@@ -1,0 +1,111 @@
+// Java Tutorial Ûdemy:
+
+. java > javac (jdk) > binary file .class > java uses a virtual machine JVM (Java virtual machine)
+
+- The language is the same for every application, but the JDK is different. 
+
+//Hello World
+
+public class App {
+    public static void main(String[] args)
+    {
+        System.out.println("Hello World!");
+        
+    }
+}
+
+- For every "public class" the name of the application must be the same as the class. Otherwise, the application will not run. Also, if you must use a class with other name (different from the application), it's important to remove the "public". 
+
+//MyNumber
+
+public class MyNumber{
+    public static void main(String[] args){
+        int myNumber = 90;
+        short myShort = 800;
+        long myLong = 9000;
+
+        double myDouble = 7.9000;
+        float myFloat = 324.3f;
+
+        char myChar = 'y';
+        boolean myBoolean = true;
+
+        byte myByte = 127;
+
+        System.out.println(myNumber);
+        System.out.println(myShort);
+        System.out.println(myLong);
+        System.out.println(myDouble);
+        System.out.println(myFloat);
+        System.out.println(myChar);
+        System.out.println(myBoolean);
+        System.out.println(myByte);
+    }
+}
+
+// Byte: Has a range from -128 to 127 and it requires very little memory (only 1 byte). It can be used in place of int where we are sure that the range will be very small. 
+// Short: is more than byte but less than int. It requires more memory than byte but less memory in comparison to int. 
+// Int: is the most preferred type for numeric values. 
+// Long: is less frenquently used. It should only be used when the range of the numeric value is too high. It requires the most memory (8 bytes) in comparison to the other three data-types. 
+// Double: has more precision than int or float. It requires more memory thant float. Can show more decimals numbers. Is represented in 64 bits, with 1 sign bit. It gives 15-16 decimal digits precision.
+// Float: it is used if we want to use momory effectively because it takes less memory in comparison to double data type. It gives 6-7 decimal digits precision. Is represented in 32 bits. A float number must have a "f" in the end. 
+// Char: it's a data type that is used to store a single character. 
+// Boolean: it has 2 values (true of false). It's a 1-bit information. 
+
+- String is a type of object that can hold text. Is a class.
+
+        String text = "hello";
+    
+// String is a class.
+// text is a variable.
+
+public class Text {
+    public static void main(String[] args){
+        int myInt = 7;
+
+        String text = "Hello";
+        String blank = " ";
+        String name = "Rafael";
+        String greeting = text + blank + name;
+
+        System.out.println(greeting);
+
+        System.out.println("Hello" + " " + "Rafael");
+
+        System.out.println("My integer is: " + myInt);
+
+        double myDouble = 7.9;
+        System.out.println("My number is: " + myDouble + ".");
+    }
+}
+
+-Loops
+
+// You can use a condition (while) to create loops that will keep runing until the codition is satisfied. 
+
+public class loop{
+    public static void main(String[] args){
+        int value = 1;
+
+        while(value < 10){
+            System.out.println("hello" + value);
+
+            value = value + 1;
+
+        }
+    }
+
+// Or even using
+
+}
+
+public class loopfor {
+    public static void main(String[] args){
+// in the first time, i = 0, then the condition is checked if i is less then 5, if true it will print. After that, the "i++" means that it will add +1 to the result of "i", then the code will see if the condition is satisfied and print again. This loop will continue until "i" is equal to 5. 
+        for (int i=0; i < 5; i++) {
+            System.out.print("the value of i is: " + i);
+        }
+    }
+}
+
+// after the command "print", you can use \n to create new lines.
